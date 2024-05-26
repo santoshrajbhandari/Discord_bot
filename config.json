@@ -1,4 +1,4 @@
 {
-  "prefix": "!",
-  "someOtherSetting": "value"
+   "token": "your_discord_token",
+ "guildId": "your_guild_id" 
 }
