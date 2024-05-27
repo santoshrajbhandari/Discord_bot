@@ -10,10 +10,11 @@ This reminder bot logs the role assigned date to a particular user in discord se
 1. First you have to create and invite bot to your server from discord developer portal. Once your invite a bot to your server you can see the bot is offline in server.
 2. Now replace your token and guildId/severId in config.json file.
 3. Install all dependencies in root directory by Opening command prompt in this directory. Copy past following command:
+  ```bash
    npm init -y
    npm install discord.js
    node index.js
-   npm install sqlite3
+   npm install sqlite3 
 5. Now to run the bot
    node index.js
 6. Open your discord server, there you can see the bot is online.
