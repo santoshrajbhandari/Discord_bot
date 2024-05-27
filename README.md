@@ -17,6 +17,6 @@ This bot is currently running on a discord server. When a new user join the disc
   ```bash
    npm init -y
    npm install discord.js
-   node index.js
+   node node.js
    npm install sqlite3 
    node index.js
