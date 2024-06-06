@@ -1,4 +1,4 @@
-//require('dotenv').config();//uncomment this for hosting bot
+require('dotenv').config();//uncomment this for hosting bot
 
 const { Client, GatewayIntentBits } = require('discord.js');
 // Your bot setup and logic here
@@ -9,7 +9,7 @@ const { handleCommand } = require('./commandHandler');
 const config = require('./config.json');
 
 // Load environment variables
-//const token = process.env.token;//uncomment this for hosting bot
+const token = process.env.token;//uncomment this for hosting bot
 
 // Create a new client instance with the necessary intents
 const client = new Client({
@@ -46,4 +46,4 @@ client.on('messageCreate', async (message) => {
     }
 }) 
 // Log in to Discord with your bot token
-client.login(config.token);//remove config for hosting bot
+client.login(token);//remove config for hosting bot
