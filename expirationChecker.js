@@ -1,9 +1,9 @@
-//require('dotenv').config();//uncomment this for hosting bot
+require('dotenv').config();//uncomment this for hosting bot
 const { getAllAssignments, removeRoleAssignment } = require('./database');
-const config = require('./config.json');
+//const config = require('./config.json');
 
 // Load environment variables
-//const guildId = process.env.guildId;//uncomment this for hosting bot
+const guildId = process.env.guildId;//uncomment this for hosting bot
 
 let botUserId; // Variable to store bot's user ID
 
@@ -33,9 +33,9 @@ const checkExpirations = async (client) => {
             const fiveDaysReminderDate = expirationDate - fiveDaysInMilliseconds;
             const oneDayReminderDate = expirationDate - oneDayInMilliseconds;
 
-            const guild = client.guilds.cache.get(config.guildId);//remove config for hosting bot
+            const guild = client.guilds.cache.get(guildId);//remove config for hosting bot
             if (!guild) {
-                console.error(`Guild not found: ${config.guildId}`);//remove config for hosting bot
+                console.error(`Guild not found: ${guildId}`);//remove config for hosting bot
                 continue;
             }
 
